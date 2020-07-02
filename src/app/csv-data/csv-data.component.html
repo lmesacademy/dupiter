@@ -1,2 +1,4 @@
 <h1>{{name | uppercase}}</h1>
-<input type="file" class="upload" (change)="changeListener($event.target.files)">
+<input type="file" (change)="changeListener($event.target.files)">
+<input type="text" (change)="setName($event.target.value)">
+<button (click)="download()" [disabled]="!isFile">Filter & Download</button>
