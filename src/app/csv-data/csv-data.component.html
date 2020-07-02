@@ -1,3 +1,2 @@
-<p>csv-data works!</p>
 <h1>{{name | uppercase}}</h1>
-<input [(ngModel)]="name" placeholder="name goes here"/>
+<input type="file" class="upload" (change)="changeListener($event.target.files)">
