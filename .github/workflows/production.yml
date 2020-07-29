@@ -25,11 +25,12 @@ jobs:
       run: yarn install
     - name: Building Project
       run: |
-        yarn build --prod
+        yarn build
+        yarn export
     - name: Deploy
       run: |
         yarn add netlify-cli
-        yarn netlify deploy --dir=dist/dupiter/ --site=${{secrets.NETLIFY_SITE_ID}} --prod
+        yarn netlify deploy --dir=dist/ --site=${{secrets.NETLIFY_SITE_ID}} --prod
       env:
         CI: true
         NETLIFY_AUTH_TOKEN: ${{secrets.NETLIFY_TOKEN}}
