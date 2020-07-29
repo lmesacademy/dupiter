@@ -1,3 +1,3 @@
 # Dupiter - CSV File Cleaner
 
-Preview : [dupiler.netlify.app](https://dupiler.netlify.app)
+Preview : [dupiter.netlify.app](https://dupiter.netlify.app)
