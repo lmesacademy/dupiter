@@ -4,7 +4,10 @@
     <select v-model="headerToClean">
       <option v-for="(h, index) in headers" :key="index" :value="h">{{ h }}</option>
     </select>
-    <button @click="downloadCSV()">Download</button>
+    <button @click="downloadCSV()">{{ $t('downloadText') }}</button>
+    <br />
+    <nuxt-link :to="{ query: { lang: 'ta'}}">Tamil</nuxt-link>
+    <nuxt-link :to="{ query: { lang: 'en'}}">English</nuxt-link>
   </div>
 </template>
 <script lang="ts">
@@ -15,6 +18,7 @@ let objectStore: any = {};
 let cleanData: any[] = [];
 
 export default Vue.extend({
+  middleware: 'i18n',
   data() {
     return {
       fileContent: "",

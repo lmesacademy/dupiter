@@ -53,10 +53,31 @@ export default {
   /*
   ** Nuxt.js modules
   */
+  router: {
+    middleware: 'i18n'
+  },
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    [
+      'nuxt-i18n',
+      {
+        locales: ['en', 'ta'],
+        defaultLocale: 'en',
+        vueI18n: {
+          fallbackLocale: 'en',
+          messages: {
+            en: {
+              downloadText: 'Download'
+            },
+            ta: {
+              downloadText: 'பதிவிறக்க'
+            }
+          }
+        }
+      }
+    ]
   ],
   /*
   ** Axios module configuration
