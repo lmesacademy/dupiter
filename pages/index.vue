@@ -1,10 +1,31 @@
 <template>
-  <div class="container">
-    <input type="file" @change="chooseFile($event)" />
-    <select v-model="headerToClean">
-      <option v-for="(h, index) in headers" :key="index" :value="h">{{ h }}</option>
-    </select>
-    <button @click="downloadCSV()">Download</button>
+  <div>
+    <div class="mx-32 my-8 px-10 py-8 text-center">
+      <h1 class="text-center text-2xl text-purple-600 font-bold ">DUPITER</h1>
+      <p class="text-center text-2xl text-black-100 font-bold ">Upload Files</p>
+      <table class=" text-center mr-16 ml-24 my-10 px-8 py-8 ">
+        <thead class="text-center">
+          <tr>
+            <th class="w-1/3 px-4 py-2">Upload</th>
+            <th class="w-1/3 px-4 py-2">Categories</th>
+            <th class="w-1/3 px-4 py-2">Download</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr>
+            <td class="border  px-4 py-2 text-center"><input type="file" @change="chooseFile($event)" /></td>
+            <td class="border px-4 py-2  text-center">
+              <select v-model="headerToClean" class="mx-6 px-10">
+                <option v-for="(h, index) in headers" :key="index" :value="h">{{ h }}</option>
+              </select></td>
+            <td class="border px-4 py-2 text-center">
+              <button class="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded" @click="downloadCSV()">Download</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </template>
 <script lang="ts">
