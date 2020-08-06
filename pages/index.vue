@@ -24,6 +24,54 @@
           </tr>
         </tbody>
       </table>
+      <table class=" text-center mr-16 ml-24 my-10 px-8 py-8 ">
+        <thead class="text-center">
+          <tr>
+            <th class="w-1/6 px-4 py-2">Location</th>
+            <th class="w-1/6 px-4 py-2">Name</th>
+            <th class="w-1/6 px-4 py-2">Gender</th>
+            <th class="w-1/6 px-4 py-2">Mail</th>
+            <th class="w-1/6 px-4 py-2">Phone Number</th>
+            <th class="w-1/3 px-4 py-2">Download</th>
+
+
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr>
+            <td class="border  px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2  text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+          </tr>
+          <tr>
+            <td class="border  px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2  text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+          </tr>
+          <tr>
+            <td class="border  px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2  text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+          </tr>
+          <tr>
+            <td class="border  px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2  text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+            <td class="border px-4 py-2 text-center"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
   </div>
