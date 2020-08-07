@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div class="mx-32 my-8 px-10 py-8 text-center">
+  <div class="h-screen bg-gray-200">
+    <div class="mx-32  px-10 py-8 text-center">
       <h1 class="text-center text-2xl text-purple-600 font-bold ">DUPITER</h1>
       <p class="text-center text-2xl text-black-100 font-bold ">Upload Files</p>
-      <table class=" text-center mr-16 ml-24 my-10 px-8 py-8 ">
+      <table class=" bg-white text-center mr-16 ml-16 my-10 px-8 py-8 rounded overflow-hidden shadow-lg">
         <thead class="text-center">
           <tr>
             <th class="w-1/3 px-4 py-2">Upload</th>
@@ -19,59 +19,66 @@
                 <option v-for="(h, index) in headers" :key="index" :value="h">{{ h }}</option>
               </select></td>
             <td class="border px-4 py-2 text-center">
-              <button class="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded" @click="downloadCSV()">Download</button>
+              <button class="bg-blue-500 hover:bg-blue-700  text-blue-100 py-2 px-4 rounded" @click="downloadCSV()">Download</button>
             </td>
           </tr>
         </tbody>
       </table>
-      <table class=" text-center mr-16 ml-24 my-10 px-8 py-8 ">
-        <thead class="text-center">
-          <tr>
-            <th class="w-1/6 px-4 py-2">Location</th>
-            <th class="w-1/6 px-4 py-2">Name</th>
-            <th class="w-1/6 px-4 py-2">Gender</th>
-            <th class="w-1/6 px-4 py-2">Mail</th>
-            <th class="w-1/6 px-4 py-2">Phone Number</th>
-            <th class="w-1/3 px-4 py-2">Download</th>
+      <div class="text-center ">
+        <div class="mr-24 my-2 py-2 ">
+          <button class="bg-blue-500 hover:bg-blue-700 float-right text-blue-100 py-2 px-4 rounded">Export CSV File</button>
+        </div>
+        <div>
+          <table class="bg-white text-center my-16 mx-12 py-10 px-2 rounded overflow-hidden shadow-lg">
+            <thead class="">
+              <tr class="border-b-2">
+                <th class="w-1/6 px-4 py-2 font-medium">Location</th>
+                <th class="w-1/6 px-4 py-2 font-medium">Name</th>
+                <th class="w-1/6 px-4 py-2 font-medium">Gender</th>
+                <th class="w-1/6 px-4 py-2 font-medium">Mail</th>
+                <th class="w-1/6 px-4 py-2 font-medium">Phone Number</th>
+                <th class="w-1/3 px-4 py-2 font-medium">Download</th>
 
 
-          </tr>
-        </thead>
-        <tbody class="text-center">
-          <tr>
-            <td class="border  px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2  text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-          </tr>
-          <tr>
-            <td class="border  px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2  text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-          </tr>
-          <tr>
-            <td class="border  px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2  text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-          </tr>
-          <tr>
-            <td class="border  px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2  text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-            <td class="border px-4 py-2 text-center"></td>
-          </tr>
-        </tbody>
-      </table>
+              </tr>
+            </thead>
+            <tbody class="text-center ">
+              <tr class="border-b-2">
+                <td class="px-4 py-2 ">Chennai</td>
+                <td class="px-4 py-2 ">Rohit</td>
+                <td class="px-4 py-2 ">32</td>
+                <td class="px-4 py-2 ">rohit@34gmail.com</td>
+                <td class="px-4 py-2 ">9898677643</td>
+                <td class="px-4 py-2 ">yes/no</td>
+              </tr>
+              <tr class="border-b-2">
+                <td class="px-4 py-2 ">Thiruvallur</td>
+                <td class="px-4 py-2  ">Shalini</td>
+                <td class="px-4 py-2 ">25</td>
+                <td class="px-4 py-2 ">salu@54gmail.com</td>
+                <td class="px-4 py-2 ">6345786895</td>
+                <td class="px-4 py-2 ">yes/no</td>
+              </tr>
+              <tr class="border-b-2">
+                <td class="px-4 py-2 ">Salem</td>
+                <td class="px-4 py-2 ">Ragini</td>
+                <td class="px-4 py-2 ">36</td>
+                <td class="px-4 py-2 ">rak@78@gmail.com</td>
+                <td class="px-4 py-2">9876543234</td>
+                <td class="px-4 py-2 ">yes/no</td>
+              </tr>
+              <tr class="border-b-2">
+                <td class="px-4 py-2 ">Dharamapuri</td>
+                <td class="px-4 py-2  ">Ragul</td>
+                <td class="px-4 py-2 ">23</td>
+                <td class="px-4 py-2 ">rag@45gmail.com</td>
+                <td class="px-4 py-2 ">7878676745</td>
+                <td class="px-4 py-2">yes/no</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
   </div>
